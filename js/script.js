@@ -1,5 +1,6 @@
 const ListOfPlayer = [];
 
+
 function BindPlayerName(ListOfPlayer){
     const tableBodyField = document.getElementById("player_list");
     if(ListOfPlayer.length >= 6){
@@ -34,8 +35,8 @@ function AddPlayerToList(elementFromClick){
 
 
 function CalculatePerPlayerAmount(){
-    const perPlayerValue = document.getElementById("perPlayerField").value;
-    console.log(ListOfPlayer.length);
+   const perPlayerValue  = document.getElementById("perPlayerField").value;
+    
     if(ListOfPlayer.length == 0){
         alert("Don't Have Player in the list");
     }
@@ -43,4 +44,14 @@ function CalculatePerPlayerAmount(){
         const playerExpenses = ListOfPlayer.length * perPlayerValue;
         document.getElementById("expensesMoney").innerText = parseFloat(playerExpenses);
     }
+}
+
+function TotalCalculatePerPlayerAmount(){
+    const perPlayerValue1  = document.getElementById("perPlayerField").value;
+    const playerExpenseCost = ListOfPlayer.length * perPlayerValue1;
+    const managerCost = document.getElementById("managerField").value;
+    const coachCost = document.getElementById("coachField").value;
+console.log(playerExpenseCost)
+    const totalCost = parseFloat(playerExpenseCost) +parseFloat(managerCost) + parseFloat(coachCost); 
+    document.getElementById("totalCost").innerText = parseFloat(totalCost);
 }

@@ -144,11 +144,25 @@
                         <div class="card-actions mt-10">
                           <button class="btn btn-primary uppercase w-96" onclick="CalculatePerPlayerAmount()">Calculate</button>
                         </div>
-                        <div class="flex mt-10">
+                        <div class="flex mt-3">
                           <label class="text-2xl text-yellow-100 ml-5" for="">Player Expenses</label>
                           <h2 class="text-2xl text-yellow-200 ml-5">$<span id="expensesMoney">0000</span></h2>
                         </div>
-                        
+                        <div class="flex mt-5">
+                          <label class="text-2xl text-yellow-100 ml-5" for="">Manager</label>
+                           <input id="managerField" type="text" placeholder="Type here" class="input input-bordered input-accent w-50 ml-5" value="2000" />
+                          </div>
+                        <div class="flex mt-2">
+                           <label class="text-2xl text-yellow-100 ml-5" for="">Coach</label>
+                           <input id="coachField" type="text" placeholder="Type here" class="input input-bordered input-accent w-50 ml-12" value="4000" />
+                        </div>
+                        <div class="card-actions mt-3">
+                          <button class="btn btn-primary uppercase w-96" onclick="TotalCalculatePerPlayerAmount()">Total Calculate</button>
+                        </div>
+                        <div class="flex mt-3">
+                          <label class="text-2xl text-yellow-100 ml-5" for="">Total</label>
+                          <h2 class="text-2xl text-yellow-200 ml-5">$<span id="totalCost">0000</span></h2>
+                        </div>
                     </div>
                 </div>
                 

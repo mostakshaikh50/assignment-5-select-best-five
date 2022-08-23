@@ -3,6 +3,7 @@ const ListOfPlayer = [];
 function BindPlayerName(ListOfPlayer){
     const tableBodyField = document.getElementById("player_list");
     if(ListOfPlayer.length >= 6){
+        alert("you have added already 5 player");
         return;
     }
     tableBodyField.innerHTML = "";

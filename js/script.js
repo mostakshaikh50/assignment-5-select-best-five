@@ -51,7 +51,7 @@ function TotalCalculatePerPlayerAmount(){
     const playerExpenseCost = ListOfPlayer.length * perPlayerValue1;
     const managerCost = document.getElementById("managerField").value;
     const coachCost = document.getElementById("coachField").value;
-console.log(playerExpenseCost)
+
     const totalCost = parseFloat(playerExpenseCost) +parseFloat(managerCost) + parseFloat(coachCost); 
     document.getElementById("totalCost").innerText = parseFloat(totalCost);
 }
